@@ -1,1 +1,31 @@
+.tabs {
+  margin: 2rem;
+}
 
+.tabs__list {
+  display: inline-flex;
+  justify-content: start;
+  border-bottom: 1px solid var(--grey-light-color);
+}
+.tabs__item {
+  margin-right: 1rem;
+}
+.tabs__item > a {
+  display: block;
+  padding: 1rem;
+  position: relative;
+}
+.tabs__item > a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0;
+  height: 1px;
+  transition: all 0.2s;
+  background-color: var(--secondary-color);
+  display: block;
+}
+.tabs__item > a.active::after {
+  width: 100%;
+  left: 0;
+}
