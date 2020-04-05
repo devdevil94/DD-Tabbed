@@ -23,4 +23,17 @@ $(document).ready(function () {
       $(`.tabs__content#${targetTabContentId}`).fadeIn();
     });
   });
+
+  const tabsToggle = $(".tabs__toggle").first();
+  tabsToggle.click(() => {
+    const tabsListId = tabsToggle.attr("data-list-target");
+    const tabsList = $(`.tabs__list#${tabsListId}`);
+    tabsList.toggle();
+  });
+  $(document).on("click", (event) => {
+    const tabsList = $(".tabs__list-wrapper").first();
+    if (tabsList !== event.target && !tabsList.has(event.target).length) {
+      $(".tabs__list").hide();
+    }
+  });
 });
