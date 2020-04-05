@@ -14,11 +14,33 @@
       <div class="tabs">
         <ul class="tabs__list">
           <li class="tabs__item">
-            <a href="#!" class="text-dark active">Breakfast</a>
+            <a
+              href="#!"
+              class="text-dark active"
+              data-tab-target="tab-content-breakfast"
+              >Breakfast</a
+            >
           </li>
-          <li class="tabs__item"><a href="#!" class="text-dark">Lunch</a></li>
-          <li class="tabs__item"><a href="#!" class="text-dark">Dinner</a></li>
+          <li class="tabs__item">
+            <a href="#!" class="text-dark" data-tab-target="tab-content-lunch"
+              >Lunch</a
+            >
+          </li>
+          <li class="tabs__item">
+            <a href="#!" class="text-dark" data-tab-target="tab-content-dinner"
+              >Dinner</a
+            >
+          </li>
         </ul>
+        <div class="tabs__content active" id="tab-content-breakfast">
+          Breakfast Menu
+        </div>
+        <div class="tabs__content" id="tab-content-lunch">
+          Lunch Menu
+        </div>
+        <div class="tabs__content" id="tab-content-dinner">
+          Dinner Menu
+        </div>
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
