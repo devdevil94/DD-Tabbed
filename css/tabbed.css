@@ -1,12 +1,15 @@
 .tabs {
   margin: 2rem;
+  width: 55rem;
 }
 
 .tabs__list {
   display: inline-flex;
   justify-content: start;
   border-bottom: 1px solid var(--grey-light-color);
+  width: 100%;
 }
+
 .tabs__item {
   margin-right: 1rem;
 }
@@ -28,4 +31,10 @@
 .tabs__item > a.active::after {
   width: 100%;
   left: 0;
+}
+
+.tabs__content {
+  padding: 1rem;
+  height: 24rem;
+  display: none;
 }
