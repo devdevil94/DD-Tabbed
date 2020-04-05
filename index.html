@@ -10,28 +10,41 @@
   </head>
   <body>
     <section>
-      <h1>Tabs</h1>
       <div class="tabs">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <a
-              href="#!"
-              class="text-dark active"
-              data-tab-target="tab-content-breakfast"
-              >Breakfast</a
-            >
-          </li>
-          <li class="tabs__item">
-            <a href="#!" class="text-dark" data-tab-target="tab-content-lunch"
-              >Lunch</a
-            >
-          </li>
-          <li class="tabs__item">
-            <a href="#!" class="text-dark" data-tab-target="tab-content-dinner"
-              >Dinner</a
-            >
-          </li>
-        </ul>
+        <div class="tabs__list-wrapper">
+          <!-- <p>
+            Choose a menu: -->
+          <button
+            class="tabs__toggle bg-secondary text-white"
+            data-list-target="tabs-list-canella"
+          >
+            Menus
+          </button>
+          <!-- </p> -->
+          <ul id="tabs-list-canella" class="tabs__list">
+            <li class="tabs__item">
+              <a
+                href="#!"
+                class="text-dark active"
+                data-tab-target="tab-content-breakfast"
+                >Breakfast</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a href="#!" class="text-dark" data-tab-target="tab-content-lunch"
+                >Lunch</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a
+                href="#!"
+                class="text-dark"
+                data-tab-target="tab-content-dinner"
+                >Dinner</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="tabs__content active" id="tab-content-breakfast">
           Breakfast Menu
         </div>
