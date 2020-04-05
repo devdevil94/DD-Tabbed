@@ -33,7 +33,7 @@
   width: 0;
   height: 1px;
   transition: all 0.2s;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: block;
 }
 .tabs__list .tabs__item > a.active::after {
