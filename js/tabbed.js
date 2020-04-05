@@ -28,12 +28,15 @@ $(document).ready(function () {
   tabsToggle.click(() => {
     const tabsListId = tabsToggle.attr("data-list-target");
     const tabsList = $(`.tabs__list#${tabsListId}`);
-    tabsList.toggle();
+    tabsList.toggleClass("active");
   });
   $(document).on("click", (event) => {
-    const tabsList = $(".tabs__list-wrapper").first();
-    if (tabsList !== event.target && !tabsList.has(event.target).length) {
-      $(".tabs__list").hide();
+    const tabsListWrapper = $(".tabs__list-wrapper").first();
+    if (
+      tabsListWrapper !== event.target &&
+      !tabsListWrapper.has(event.target).length
+    ) {
+      $(".tabs__list").removeClass("active");
     }
   });
 });
