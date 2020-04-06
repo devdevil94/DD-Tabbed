@@ -16,6 +16,7 @@
   justify-content: center;
   flex-direction: row;
   min-width: 100%;
+  overflow: hidden;
 }
 
 .tabs__item {
